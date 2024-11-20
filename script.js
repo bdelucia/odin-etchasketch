@@ -29,7 +29,7 @@ button.addEventListener("click", () => {
     }
 
     gridSize = promptGridSize();
-    sideLength = 900 / gridSize;
+    sideLength = Math.floor(900 / gridSize);
 
     for (let i = 0; i < gridSize; i++)
     {
@@ -38,8 +38,7 @@ button.addEventListener("click", () => {
 
             const square = document.createElement("div");
 
-            square.style.width = sideLength + "px";
-            square.style.height = sideLength + "px";
+            square.style.flexBasis = `calc(100%  / ${gridSize})`; /* this code changes square size depending on gridSize. Only line got from another student's solution */
             square.style.border = "1px solid black";
 
             container.appendChild(square);
