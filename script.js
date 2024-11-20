@@ -47,7 +47,6 @@ button.addEventListener("click", () => {
         }
     }
     const squares = container.querySelectorAll('*');
-    let startingOpacity = 0.1;
 
     squares.forEach((square) => {
         square.addEventListener('mouseover', () => {
