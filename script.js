@@ -28,7 +28,6 @@ button.addEventListener("click", () => {
         })
     }
 
-
     gridSize = promptGridSize();
     sideLength = 900 / gridSize;
 
